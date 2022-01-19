@@ -1,0 +1,17 @@
+.timeline-outter-container {
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: $background-timeline;
+}
+
+.timeline-title {
+  padding: 0 20px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}

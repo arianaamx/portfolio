@@ -1,0 +1,113 @@
+.timeline-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1px 1fr;
+  width: 100%;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+
+  @media (min-width: 1000px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 500px) {
+    padding-left: 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1px 1fr;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Box Container
+.box-container {
+  padding: 10px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.1);
+  border-radius: 10px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+
+  @media (max-width: 500px) {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+}
+
+.box-container-right {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+
+  @media (max-width: 500px) {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+}
+
+// Job position
+.item-container {
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.job-position-title {
+  font-weight: 700;
+}
+
+.line {
+  background-color: $timeline-line;
+  position: relative;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -9px;
+    background-color: white;
+    border: 4px solid $timeline-line;
+    top: 45%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  @media (max-width: 500px) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+}
+
+// Empty div
+.empty-div {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.empty-div-right {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}

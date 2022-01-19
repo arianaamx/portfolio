@@ -1,0 +1,28 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #82bcff;
+  text-decoration: none;
+  padding-bottom: 20px;
+
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3.5rem;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
