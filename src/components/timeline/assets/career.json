@@ -1,0 +1,26 @@
+[
+  {
+    "jobPosition": "Frontend Developer",
+    "company": "The Spectator",
+    "date": "May 2021 - present",
+    "description": "Keywords: Next.js, React.js, TypeScript, AWS (Amplify)"
+  },
+  {
+    "jobPosition": "Software Engineer",
+    "company": "Fizio Tech",
+    "date": "January 2020 - April 2021",
+    "description": "Keywords: React.js, TypeScript"
+  },
+  {
+    "jobPosition": "Student Consultant",
+    "company": "Ericsson",
+    "date": "January 2020 - April 2021",
+    "description": "Keywords: Python"
+  },
+  {
+    "jobPosition": "Robotics Mentor",
+    "company": "Summer Camp Ivanić Grad",
+    "date": "August 2018, 2019, 2020",
+    "description": "Keywords: Raspberry, Python, Lego"
+  }
+]
